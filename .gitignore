@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.venv/
+venv/
+env/
+
+# Build outputs
+dist/
+.vite/
+.next/
+.astro/
+out/
+build/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+
+# Turborepo cache
+.turbo/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db

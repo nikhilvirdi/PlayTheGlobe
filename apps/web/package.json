@@ -1,0 +1,28 @@
+{
+  "name": "@playtheglobe/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "biome lint ."
+  },
+  "dependencies": {
+    "solid-js": "^1.8.18",
+    "gsap": "^3.12.5",
+    "howler": "^2.2.4",
+    "three": "^0.165.0",
+    "globe.gl": "^2.32.2",
+    "socket.io-client": "^4.7.5",
+    "@playtheglobe/types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-solid": "^2.11.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@playtheglobe/config": "workspace:*"
+  }
+}

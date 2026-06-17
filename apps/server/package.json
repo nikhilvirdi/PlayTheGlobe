@@ -1,0 +1,32 @@
+{
+  "name": "@playtheglobe/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "biome lint ."
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "socket.io": "^4.7.5",
+    "surrealdb": "^1.0.0",
+    "@upstash/redis": "^1.31.3",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1",
+    "@playtheglobe/types": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^20.12.12",
+    "tsx": "^4.11.0",
+    "@playtheglobe/config": "workspace:*"
+  }
+}
