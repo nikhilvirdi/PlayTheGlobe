@@ -2,7 +2,7 @@ import express from "express";
 import http from "http";
 import cors from "cors";
 import { Server } from "socket.io";
-import { Surreal } from "surrealdb";
+import db, { connectDB } from "./db/surreal.js";
 import { Redis } from "@upstash/redis";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
@@ -23,7 +23,6 @@ const UPSTASH_REDIS_TOKEN = process.env.UPSTASH_REDIS_TOKEN || "";
 const JWT_SECRET = process.env.JWT_SECRET || "fallback_secret";
 
 // Initialize databases (Placeholders)
-const db = new Surreal();
 let redis: Redis | null = null;
 if (UPSTASH_REDIS_URL && UPSTASH_REDIS_TOKEN) {
   redis = new Redis({
@@ -91,8 +90,7 @@ io.on("connection", (socket) => {
 app.get("/health", (req, res) => {
   res.status(200).json({ 
     status: "ok", 
-    dbConnected: db.status === "opened", 
-    cacheEnabled: redis !== null 
+    db: db.status === "opened" ? "connected" : "disconnected"
   });
 });
 
@@ -133,6 +131,16 @@ app.post("/api/auth/login", async (req, res) => {
 });
 
 // Start Server
-server.listen(PORT, () => {
-  console.log(`🚀 PlayTheGlobe server is listening on port ${PORT}`);
-});
+async function startServer() {
+  try {
+    await connectDB();
+    server.listen(PORT, () => {
+      console.log(`🚀 PlayTheGlobe server is listening on port ${PORT}`);
+    });
+  } catch (error) {
+    console.error("CRITICAL: Failed to start server due to connection error:", error);
+    process.exit(1);
+  }
+}
+
+startServer();

@@ -16,9 +16,13 @@
 ## Phase 2 — Dependencies
 - [x] Configure apps/web package.json dependencies
 - [x] Configure apps/server package.json dependencies
-- [ ] Run pnpm install at workspace root
+- [x] Run pnpm install at workspace root
 
 ## Phase 3 — SurrealDB Schema
+- [x] Initialize SurrealDB connection client (`surreal.ts`)
+- [x] Define schemas for users, leaderboard, sessions, mastery, and seasons (`schema.sql`)
+- [x] Integrate database start and health endpoint into Express
+- [x] Export database TS type interfaces in `packages/types`
 ## Phase 4 — Auth System
 ## Phase 5 — Frontend Design System
 ## Phase 6 — Globe Rendering
