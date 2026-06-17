@@ -131,3 +131,13 @@ export interface ClientToServerEvents {
   submitGuess: (payload: { latitude: number; longitude: number }) => void;
   nextRound: () => void;
 }
+
+export interface AuthResponse {
+  token: string;
+  user: User;
+}
+
+export interface JWTPayload {
+  userId: string;
+  username: string;
+}

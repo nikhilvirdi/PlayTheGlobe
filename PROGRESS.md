@@ -24,6 +24,13 @@
 - [x] Integrate database start and health endpoint into Express
 - [x] Export database TS type interfaces in `packages/types`
 ## Phase 4 — Auth System
+- [x] Create Express JWT authentication middleware (`auth.ts`)
+- [x] Implement signup `/api/auth/register` with validations and bcrypt hashing
+- [x] Implement login `/api/auth/login` with token response
+- [x] Implement protected profile retrieval `/api/auth/me`
+- [x] Define utility methods for token signing and verification (`jwt.ts`)
+- [x] Add types `AuthResponse` and `JWTPayload` to shared types package
+
 ## Phase 5 — Frontend Design System
 ## Phase 6 — Globe Rendering
 ## Phase 7 — Game Modes

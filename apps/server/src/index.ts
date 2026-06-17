@@ -4,6 +4,7 @@ import cors from "cors";
 import { Server } from "socket.io";
 import db, { connectDB } from "./db/surreal.js";
 import { Redis } from "@upstash/redis";
+import authRouter from "./routes/auth.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 import type { 
@@ -35,6 +36,9 @@ if (UPSTASH_REDIS_URL && UPSTASH_REDIS_TOKEN) {
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// Auth Routes
+app.use("/api/auth", authRouter);
 
 const server = http.createServer(app);
 
