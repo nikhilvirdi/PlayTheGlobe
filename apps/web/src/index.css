@@ -20,7 +20,7 @@
   --color-border: #00ff88;
 
   /* Typography */
-  --font-pixel: 'Press Start 2P', monospace;
+  --font-pixel: 'Patrick Hand', cursive;
 }
 
 /* Base Styles */
@@ -29,7 +29,7 @@ html, body {
   padding: 0;
   min-height: 100vh;
   font-family: var(--font-pixel);
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.8;
   color: var(--color-white);
   background: var(--color-bg);
@@ -61,6 +61,7 @@ html, body {
 .pixel-panel {
   background: var(--color-panel);
   border: 3px solid var(--color-border);
+  border-radius: 6px;
   box-shadow: 6px 6px 0px #000;
   padding: 24px;
   image-rendering: pixelated;
@@ -71,6 +72,7 @@ html, body {
   background: var(--color-primary);
   color: var(--color-dark);
   border: none;
+  border-radius: 6px;
   padding: 12px 24px;
   font-family: var(--font-pixel);
   font-size: 10px;
@@ -101,6 +103,7 @@ html, body {
 .pixel-input {
   background: var(--color-dark);
   border: 3px solid var(--color-accent-blue);
+  border-radius: 6px;
   color: var(--color-white);
   font-family: var(--font-pixel);
   font-size: 10px;

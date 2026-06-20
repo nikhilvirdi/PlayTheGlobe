@@ -3,6 +3,7 @@ import { Router, Route } from "@solidjs/router";
 import PageWrapper from "./components/Layout/PageWrapper.js";
 import PixelPanel from "./components/UI/PixelPanel.js";
 import PixelButton from "./components/UI/PixelButton.js";
+import GlobeContainer from "./components/Globe/GlobeContainer.js";
 
 const HomePage: Component = () => (
   <PixelPanel title="PlayTheGlobe">
@@ -46,23 +47,7 @@ const RegisterPage: Component = () => (
 
 const PlayPage: Component = () => (
   <div class="flex flex-col gap-3">
-    <PixelPanel title="Landmark Target Clues">
-      <p class="text-accent-yellow">Round 1/5</p>
-      <p class="text-white mt-1">Eiffel Tower - Paris, France.</p>
-    </PixelPanel>
-    <PixelPanel title="Interactive 3D WebGL Globe View" class="mt-2">
-      <div 
-        style={{
-          "min-height": "300px", 
-          "background": "var(--color-dark)",
-          "display": "flex",
-          "align-items": "center",
-          "justify-content": "center"
-        }}
-      >
-        <span class="pixel-float" style={{ "font-size": "32px" }}>🌍</span>
-      </div>
-    </PixelPanel>
+    <GlobeContainer mode="guess" guessedCountries={[]} />
   </div>
 );
 

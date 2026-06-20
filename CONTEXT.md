@@ -45,7 +45,7 @@ playtheglobe/
 - No authentication via third party, JWT + bcrypt only
 - Desktop first UI
 - Pixel art retro aesthetic, multicolor earth palette
-- Press Start 2P font for all typography
+- Patrick Hand font for UI typography, Kitsch Display (Canva export) for logo/branding only
 
 ## Game Modes
 Flag Mode, Globe Mode, Reverse Mode, Hard Mode, Blitz Speedrun, Trivia Blitz, Population Poker, Area Showdown, Oldest/Youngest Nation, GDP Ladder, Capital Chaos, Currency Match, Language Roots, Timeline Nation, Who's From Where, Anthem Drop, Shape Shifter, Coat of Arms, Flag Builder, Border Chain, Elimination Mode, Head to Head Live Duels, Daily Gauntlet

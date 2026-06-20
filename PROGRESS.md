@@ -32,13 +32,16 @@
 - [x] Add types `AuthResponse` and `JWTPayload` to shared types package
 
 ## Phase 5 — Frontend Design System
-- [x] Configure Google Fonts preloading for 'Press Start 2P'
+- [x] Configure Google Fonts preloading for 'Patrick Hand' (updated from Press Start 2P)
 - [x] Set custom style variables and scrollbar in `index.css`
 - [x] Build shared custom pixel design components: `PixelButton`, `PixelPanel`, `PixelInput`, and `StreakFlame`
 - [x] Integrate navigation bar and layout wrappers (`Navbar`, `PageWrapper`)
 - [x] Route view navigation configurations under `@solidjs/router` in `App.tsx`
 
 ## Phase 6 — Globe Rendering
+- [x] Integrate Three.js and globe.gl
+- [x] Create GlobeView component with responsive container
+- [x] Configure interactive features and placeholder GeoJSON
 ## Phase 7 — Game Modes
 ## Phase 8 — AI Hint System
 ## Phase 9 — Realtime Features

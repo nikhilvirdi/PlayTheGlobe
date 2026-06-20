@@ -9,23 +9,23 @@
     "lint": "biome lint ."
   },
   "dependencies": {
-    "solid-js": "^1.8.18",
-    "@solidjs/router": "^0.13.0",
+    "@playtheglobe/types": "workspace:*",
+    "@solidjs/router": "^0.13.6",
+    "globe.gl": "^2.32.2",
     "gsap": "^3.12.5",
     "howler": "^2.2.4",
-    "three": "^0.165.0",
-    "globe.gl": "^2.32.2",
     "socket.io-client": "^4.7.5",
-    "@playtheglobe/types": "workspace:*"
+    "solid-js": "^1.8.18",
+    "three": "^0.165.0"
   },
   "devDependencies": {
+    "@playtheglobe/config": "workspace:*",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/howler": "^2.2.11",
+    "@types/three": "^0.165.0",
+    "tailwindcss": "^4.0.0",
     "typescript": "^5.4.5",
     "vite": "^5.2.11",
-    "vite-plugin-solid": "^2.11.0",
-    "tailwindcss": "^4.0.0",
-    "@tailwindcss/vite": "^4.0.0",
-    "@types/three": "^0.165.0",
-    "@types/howler": "^2.2.11",
-    "@playtheglobe/config": "workspace:*"
+    "vite-plugin-solid": "^2.11.0"
   }
 }

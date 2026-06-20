@@ -8,7 +8,8 @@
     "format": "biome format --write ."
   },
   "devDependencies": {
-    "turbo": "^2.0.4",
-    "@biomejs/biome": "^1.8.3"
-  }
+    "@biomejs/biome": "^1.8.3",
+    "turbo": "^2.0.4"
+  },
+  "packageManager": "pnpm@10.33.2"
 }

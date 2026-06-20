@@ -25,6 +25,7 @@ const Navbar: Component = () => {
       }}
     >
       {/* Left: Logo */}
+      {/* TODO replace text logo with /public/logo.png once exported from Canva (Kitsch Display font), target size 40x40px display */}
       <A 
         href="/" 
         class="text-primary"
